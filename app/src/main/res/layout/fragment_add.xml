@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/scrollView2" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <Button
+                android:id="@+id/btnAdd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Add"
+                android:textSize="20sp"
+                android:layout_alignParentRight="true" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btnAdd"
+                android:id="@+id/edtTitle"
+                android:layout_marginTop="10dp"
+                android:hint="Title"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/edtDescription"
+                android:layout_below="@id/edtTitle"
+                android:layout_marginTop="10dp"
+                android:height="200dp"
+                android:hint="Description"/>
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/spinner_height"
+                android:id="@+id/sprAnimal"
+                android:background="@color/counter_text_color"
+                android:layout_alignTop="@+id/edtAddress"
+                android:layout_alignLeft="@+id/edtPhone"
+                android:layout_alignEnd="@+id/edtPhone"
+                android:layout_marginTop="10dp">
+            </Spinner>
+            <EditText
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/edtAddress"
+                android:layout_below="@id/edtDescription"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="10dp"
+                android:hint="Address"/>
+            <EditText
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/edtPhone"
+                android:inputType="phone"
+                android:layout_below="@id/sprAnimal"
+                android:layout_marginTop="10dp"
+                android:hint="Phone"/>
+            <EditText
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/edtName"
+                android:layout_below="@id/sprAnimal"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="10dp"
+                android:hint="Name"/>
+            <Button
+                android:id="@+id/btnTakePicture"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edtPhone"
+                android:layout_marginTop="10dp"
+                android:text="Take Picture"
+                android:textSize="20sp"
+                android:gravity="left"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnLoadPicture"
+                android:text="Load from phone"
+                android:textSize="20sp"
+                android:gravity="right"
+                android:layout_above="@+id/imgPicture"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+            <ImageView
+                android:layout_width="300dp"
+                android:layout_height="250dp"
+                android:layout_below="@id/btnTakePicture"
+                android:id="@+id/imgPicture"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"/>
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="?android:attr/progressBarStyleLargeInverse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerInParent="true"/>
+            </RelativeLayout>
+    </ScrollView>
+</LinearLayout>

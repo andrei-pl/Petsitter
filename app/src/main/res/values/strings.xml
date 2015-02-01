@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Petsitter</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_example">Example action</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- Nav Drawer List Item Icons -->
+    <!-- Keep them in order as the titles are in -->
+    <string-array name="animal_options">
+        <item>Dog</item>
+        <item>Cat</item>
+        <item>Bird</item>
+        <item>Rodent</item>
+        <item>Fish</item>
+        <item>Other</item>
+    </string-array>
+
+    <array name="nav_drawer_icons">
+        <item>@drawable/all_icon</item>
+        <item>@drawable/dog_icon</item>
+        <item>@drawable/cat_icon</item>
+        <item>@drawable/bird_icon</item>
+        <item>@drawable/rodent_icon</item>
+        <item>@drawable/fish_icon</item>
+        <item>@drawable/other_icon</item>
+        <item>@drawable/logout_icon</item>
+    </array>
+</resources>
