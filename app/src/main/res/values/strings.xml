@@ -27,6 +27,5 @@
         <item>@drawable/rodent_icon</item>
         <item>@drawable/fish_icon</item>
         <item>@drawable/other_icon</item>
-        <item>@drawable/logout_icon</item>
     </array>
 </resources>

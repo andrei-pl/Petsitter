@@ -222,8 +222,6 @@ public class MainActivity extends ActionBarActivity
                 }
             }
             inflateFragment(7, animalArray);
-        } else if (position == 7) {
-            //Log out
         }
 
         if (position > 0 && position <= classifieds.size()) {

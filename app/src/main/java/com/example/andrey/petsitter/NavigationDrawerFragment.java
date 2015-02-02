@@ -127,7 +127,6 @@ public class NavigationDrawerFragment extends Fragment {
         navDrawerItems.add(new NavDrawerItem(navMenuTitles.get(4), navMenuIcons.getResourceId(4, -1)));
         navDrawerItems.add(new NavDrawerItem(navMenuTitles.get(5), navMenuIcons.getResourceId(5, -1)));
         navDrawerItems.add(new NavDrawerItem(navMenuTitles.get(6), navMenuIcons.getResourceId(6, -1)));
-        navDrawerItems.add(new NavDrawerItem(navMenuTitles.get(7), navMenuIcons.getResourceId(7, -1)));
 
 
         adapter = new NavDrawerListAdapter(getActivity(), navDrawerItems);
@@ -145,11 +144,9 @@ public class NavigationDrawerFragment extends Fragment {
 
         if(AnimalType.values() != null){
             for (AnimalType animal : AnimalType.values()){
-                array.add(String.valueOf(animal));
+                array.add(String.valueOf(animal) + "s");
             }
         }
-
-        array.add("Log out");
 
         return array;
     }
