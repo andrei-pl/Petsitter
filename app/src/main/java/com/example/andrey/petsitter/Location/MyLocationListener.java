@@ -15,7 +15,7 @@ import java.util.List;
 import java.util.Locale;
 
 /**
- * Created by Andrey on 29.1.2015 г..
+ * Created by Andrey on 21.2.2015 г..
  */
 public class MyLocationListener implements LocationListener {
 
